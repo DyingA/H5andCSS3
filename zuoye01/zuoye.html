@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		input{
+			width: 280px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+
+		}
+		form{
+			padding-left: 15px;
+			padding-top: 5px;
+		}
+		span{
+			color: red;
+		}
+		fieldset{
+			height: 500px;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<h2>学生信息</h2>
+		<form>
+			<fieldset>
+				<legend style="color: red">学生档案</legend>
+				姓名：<br/>
+				<input type="text" name="userName" required="ture" placeholder="请输入姓名"><span>*</span><br/>
+				学号：<br/>
+				<input type="text" name="num" required="ture" placeholder="请输入学号"><span>*</span><br/>
+				手机号码：<br/>
+				<input type="tel" name="phone" required="ture" placeholder="请输入手机号"><span>*</span><br/>
+				邮箱地址：<br/>
+				<input type="email" name="email" required="ture" placeholder="请输入邮箱地址"><span>*</span><br/>
+				录取学校：<br/>
+				<input type="search" name="search" list="school">
+				<datalist id="school">
+					<option>北京大学</option>
+					<option>清华大学</option>
+					<option>浙江大学</option>
+					<option>大连理工大学</option>
+				</datalist><br/>
+				入学成绩：<br/>
+				<input type="number" max="600" min="0"><br/>
+				入学时间：<br/>
+				<input type="date" name="time">
+				<input type="submit">
+			</fieldset>
+		</form>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>
