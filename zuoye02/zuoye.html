@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zuoye02</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		fieldset{
+			width: 700px;
+			height: 300px;
+			margin-left: 400px;
+			margin-top: 100px;
+		}
+		#skin{
+			width: 670px;
+			height: 40px;
+			margin-top: 20px;
+			margin-left: 15px;
+			border:2px solid #aaa;
+		}
+		#skin>div{
+			height: 20px;
+			width: 15px;
+			margin-left: 10px;
+			margin-top: 10px;
+			float: left;
+		}
+		#message{
+			width: 650px;
+			height: 60px;
+			margin-left: 30px;
+			margin-top: 20px;
+		}
+		#text{
+			height: 30px;
+			width: 670px;
+		}
+		#txt>div{
+			color: grey;
+			font-size: 10px;
+			position: absolute;
+			top: 210px;
+			border:1px solid grey;
+			display: none;
+		}
+		#one{
+			left: 455px;
+		}
+		#two{
+			left: 480px;
+		}
+		#three{
+			left: 505px;
+		}
+		#four{
+			left: 530px;
+		}
+		#five{
+			left: 555px;
+		}
+		#six{
+			left: 580px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend style="color: red;font-size:40px">网页换肤</legend>
+			<div id="skin">
+				<div class="bg" style="background-color: grey"></div>
+				<div class="bg" style="background-color: yellow"></div>
+				<div class="bg" style="background-color: red"></div>
+				<div class="bg" style="background-color: blue"></div>
+				<div class="bg" style="background-color: green"></div>
+				<div class="bg" style="background-color: pink"></div>
+				<div id="txt">
+					<div id="one">灰色</div>
+					<div id="two">黄色</div>
+					<div id="three">红色</div>
+					<div id="four">蓝色</div>
+					<div id="five">绿色</div>
+					<div id="six">粉色</div>
+				</div>
+			</div>
+			<div id="message">
+				LocalStorage将数据保存在客户端本地的硬件设备中，即便浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用。
+			</div>
+		</fieldset>		
+	</form>
+</body>
+<script type="text/javascript">
+	var message = document.getElementById('message');
+	var bg = document.getElementsByClassName('bg');
+	var skin = document.getElementById('skin');
+	var txt = document.getElementById('txt');
+	message.style.backgroundColor ="grey";
+	document.getElementById('one').style.display = "block";
+	var x=0;
+	function fun(){
+		for(var i=0;i<skin.children.length;i++){
+			skin.children[i].style.marginTop = "10px";
+		}
+	}
+	function funf(){
+		for(var i=0;i<txt.children.length;i++){
+			txt.children[i].style.display = "none";
+		}
+	}
+	bg[0].onclick=function(){		
+		fun();
+		funf();
+		document.getElementById('one').style.display = "block";
+		bg[0].style.marginTop = "5px";
+		message.style.backgroundColor ="grey";
+		localStorage.setItem("key"+x,0);
+		x++;		
+	}
+	bg[1].onclick=function(){
+		fun();
+		funf();
+		document.getElementById('two').style.display = "block";
+		bg[1].style.marginTop = "5px";
+		message.style.backgroundColor ="yellow";
+		localStorage.setItem("key"+x,1);
+		x++;
+	}
+	bg[2].onclick=function(){
+		fun();
+		funf();
+		document.getElementById('three').style.display = "block";
+		bg[2].style.marginTop = "5px";
+		message.style.backgroundColor ="red";
+		localStorage.setItem("key"+x,2);
+		x++;
+	}
+	bg[3].onclick=function(){
+		fun();
+		funf();
+		document.getElementById('four').style.display = "block";
+		bg[3].style.marginTop = "5px";
+		message.style.backgroundColor ="blue";
+		localStorage.setItem("key"+x,3);
+		x++;
+	}
+	bg[4].onclick=function(){
+		fun();
+		funf();
+		document.getElementById('five').style.display = "block";
+		bg[4].style.marginTop = "5px";
+		message.style.backgroundColor ="green";
+		localStorage.setItem("key"+x,4);
+		x++;
+	}
+	bg[5].onclick=function(){
+		fun();
+		funf();
+		document.getElementById('six').style.display = "block";
+		bg[5].style.marginTop = "5px";
+		message.style.backgroundColor ="pink";
+		localStorage.setItem("key"+x,5);
+		x++;
+	}
+	var index = localStorage.length-1;
+	var num=localStorage.getItem("key"+index);
+	if(num==0){
+		bg[0].style.marginTop = "5px";
+		message.style.backgroundColor ="grey";
+	}
+	else if(num==1){
+		bg[1].style.marginTop = "5px";
+		message.style.backgroundColor ="yellow";
+	}
+	else if(num==2){
+		bg[2].style.marginTop = "5px";
+		message.style.backgroundColor ="red";
+	}
+	else if(num==3){
+		bg[3].style.marginTop = "5px";
+		message.style.backgroundColor ="blue";
+	}
+	else if(num==4){
+		bg[4].style.marginTop = "5px";
+		message.style.backgroundColor ="green";
+	}
+	else if(num==5){
+		bg[5].style.marginTop = "5px";
+		message.style.backgroundColor ="pink";
+	}
+	else{
+		bg[0].style.marginTop = "5px";
+	}
+</script>
+</html>
