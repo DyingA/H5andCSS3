@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+    @media screen and (min-width: 1200px) {
+            a {
+                color: white;
+            }
+            span {
+                font-size: 20px;
+            }
+            .navbar-right {
+                padding-top: 10px;
+                padding-right: 80px;
+            }
+            .container {
+                height: 70px;
+            }
+            .title {
+                height: 50px;
+                float: left;
+                margin-left: 100px;
+                margin-top: 8px;
+                font-size: 20px;
+            }
+            #logo1 {
+                float: left;
+            }
+            #one {
+                margin-left: 120px;
+            }
+            .title:hover {
+                border-bottom: solid 4px rgb(206, 106, 38);
+            }
+            .dingzhi {
+                display: none;
+            }
+            .hamous {
+                display: none;
+            }
+            .banner img {
+                width: 100%;
+            }
+            .txt {
+                position: absolute;
+                left: 200px;
+                top: 300px;
+                color: white;
+            }
+            .newImgtxt1 {
+                display: none;
+            }
+            .newImgtxt2 {
+                display: none;
+            }
+            .chakan {
+                display: none;
+            }
+            .txt2 {
+                width: 300px;
+                border-top: solid 1px white;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            .txt3 {
+                border-bottom: solid 1px white;
+            }
+            .txt4,
+            .txt5 {
+                display: none;
+            }
+            .start img {
+                width: 1000px;
+                height: 300px;
+                margin-left: 200px;
+                margin-top: 30px;
+            }
+            .car {
+                position: absolute;
+                right: 120px;
+                top: 615px;
+                width: 200px;
+                height: 300px;
+                background-color: rgb(20, 49, 109);
+            }
+            .car img {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                right: 50px;
+                top: 40px;
+            }
+            .newThird {
+                display: none;
+            }
+            .car span {
+                color: white;
+                position: absolute;
+                right: 50px;
+                top: 170px;
+            }
+            .carText {
+                height: 30px;
+                width: 130px;
+                text-align: center;
+                padding-top: 5px;
+                color: white;
+                position: absolute;
+                right: 30px;
+                top: 210px;
+                border: solid 1px white;
+                border-radius: 8px;
+            }
+            .road {
+                margin-left: 650px;
+            }
+            .carTxtc {
+                position: absolute;
+                top: 100px;
+                left: 200px;
+            }
+            .row1 {
+                width: 600px;
+                height: 1000px;
+                float: left;
+                margin-left: 150px;
+            }
+            .row2 {
+                width: 600px;
+                height: 1000px;
+                float: left;
+            }
+            .imgTxt1,
+            .imgTxt2 {
+                color: white;
+                background-color: black;
+                height: 100px;
+                width: 588px;
+                padding-top: 18px;
+                padding-left: 20px;
+            }
+            .img2,
+            .img4,
+            .img5 {
+                margin-top: 5px;
+            }
+            .imgTxt3,
+            .imgTxt4,
+            .imgTxt5 {
+                background-color: rgba(0, 0, 0, 0.5);
+                height: 100px;
+                width: 610px;
+                color: white;
+                padding-top: 18px;
+                padding-left: 20px;
+            }
+            .imgTxt3 {
+                position: absolute;
+                top: 1235px;
+                right: 160px
+            }
+            .newThink {
+                display: none;
+            }
+            .imgTxt4 {
+                position: absolute;
+                top: 1595px;
+                right: 160px
+            }
+            .hotRoad {
+                display: none;
+            }
+            .imgTxt5 {
+                position: absolute;
+                top: 1965px;
+                right: 160px
+            }
+            .wish {
+                width: 500px;
+                position: absolute;
+                top: 2090px;
+                left: 650px;
+            }
+            .smallCar {
+                display: none;
+            }
+            .logoImg {
+                position: absolute;
+                left: 100px;
+                top: 2200px;
+                height: 500px;
+                margin-top: 20px;
+                margin-left: 50px;
+            }
+            .newLast {
+                display: none;
+            }
+            .think {
+                background-color: rgb(28, 80, 128);
+                width: 700px;
+                height: 350px;
+                position: absolute;
+                top: 2220px;
+                left: 630px;
+                color: white;
+                padding-top: 50px;
+            }
+            .think h3 {
+                text-align: center;
+            }
+            .think div {
+                height: 150px;
+                padding-left: 120px;
+                padding-right: 100px;
+                font-size: 15px;
+            }
+            .second {
+                position: absolute;
+                left: 150px;
+                top: 2570px;
+            }
+            .second img {
+                width: 1180px;
+                height: 450px;
+                margin-top: 5px;
+            }
+            .third {
+                height: 400px;
+                width: 1180px;
+                position: absolute;
+                left: 150px;
+                top: 3030px;
+                background-color: rgb(28, 80, 128);
+                color: white;
+            }
+            .circle1,
+            .circle2,
+            .circle3 {
+                width: 350px;
+                height: 400px;
+                float: left;
+                padding-left: 120px;
+                padding-top: 50px;
+            }
+            #icon1 {
+                position: absolute;
+                left: 185px;
+                top: 100px;
+            }
+            .newWish {
+                display: none;
+            }
+            #icon2 {
+                position: absolute;
+                left: 540px;
+                top: 100px;
+            }
+            #icon3 {
+                position: absolute;
+                left: 890px;
+                top: 100px;
+            }
+            .rorate1 p {
+                position: absolute;
+                left: 180px;
+                top: 165px;
+            }
+            .rorate2 p {
+                position: absolute;
+                left: 530px;
+                top: 170px;
+            }
+            .rorate3 p {
+                position: absolute;
+                left: 880px;
+                top: 165px;
+            }
+            .rorate1Txt,
+            .rorate2Txt,
+            .rorate3Txt {
+                text-align: center;
+                width: 280px;
+                margin-left: -35px;
+                margin-top: 30px;
+            }
+            .last {
+                width: 100%;
+                height: 550px;
+                background-color: black;
+                position: absolute;
+                top: 3430px;
+                color: white;
+            }
+            .xiecheng,
+            .feizhu,
+            .quna,
+            .suzhou {
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin-right: 40px;
+                margin-top: 50px;
+            }
+            #xiecheng1 {
+                margin-left: 200px;
+            }
+            .line1Txt {
+                position: absolute;
+                left: 100px;
+                top: 50px;
+                font-size: 20px;
+            }
+            .line1 p {
+                text-align: center;
+                padding-top: 10px;
+                font-size: 12px;
+            }
+            #suzhou1 {
+                position: absolute;
+                left: 628px;
+                top: 93px;
+            }
+            .line2 {
+                position: absolute;
+                top: 180px;
+                padding-left: 100px;
+            }
+            .country {
+                position: absolute;
+                top: 0px;
+                left: 200px;
+                width: 900px;
+            }
+            .line3 {
+                position: absolute;
+                top: 220px;
+                padding-left: 100px;
+            }
+            .enjoy {
+                position: absolute;
+                top: 55px;
+                left: 200px;
+                width: 900px;
+            }
+            .line3 span {
+                position: absolute;
+                top: 50px;
+                left: 100px;
+                width: 100px;
+            }
+            .line4 {
+                position: absolute;
+                top: 240px;
+                padding-left: 100px;
+            }
+            .lianjie {
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                width: 900px;
+            }
+            .line4 span {
+                position: absolute;
+                top: 95px;
+                left: 100px;
+                width: 100px;
+            }
+            .line5 {
+                width: 400px;
+                text-align: center;
+                margin-top: 470px;
+                margin-left: 500px;
+            }
+            .search {
+                width: 500px;
+                position: absolute;
+                top: 500px;
+                left: 550px;
+                height: 30px;
+            }
+            .search input {
+                height: 40px;
+                position: absolute;
+                top: 5px;
+                left: 20px;
+            }
+            .goal {
+                width: 100px;
+                height: 40px;
+                background-color: rgb(211, 211, 216);
+                position: absolute;
+                left: -80px;
+                top: 5px;
+            }
+            .goal img {
+                width: 20px;
+                height: 20px;
+                float: left;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            .goal p {
+                position: absolute;
+                top: 10px;
+                left: 30px;
+            }
+            .btn {
+                width: 80px;
+                height: 40px;
+                background-color: rgb(203, 84, 5);
+                position: absolute;
+                left: 195px;
+                top: 5px;
+            }
+            .btn img {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 5px;
+                left: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            .title {
+                display: none;
+            }
+            .dingzhi {
+                background-color: rgb(232, 66, 10);
+                border-radius: 5px;
+                width: 90px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                right: 100px;
+                color: white;
+                font-size: 15px;
+                padding-top: 5px;
+                padding-left: 15px;
+            }
+            .hamous {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                right: 40px;
+                border-bottom: solid 2px black;
+                border-top: solid 2px black;
+            }
+            .oneH {
+                width: 30px;
+                height: 14px;
+                border-bottom: solid 2px black;
+            }
+            .banner img {
+                width: 100%;
+                margin-top: 20px;
+                height: 300px;
+            }
+            .txt1,
+            .txt2,
+            .txt3 {
+                display: none;
+            }
+            .txt4 {
+                position: absolute;
+                top: 150px;
+                left: 70px;
+                color: white;
+                font-size: 30px;
+            }
+            .txt5 {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 200px;
+                left: 75px;
+            }
+            .goal {
+                width: 100px;
+                height: 30px;
+                background-color: rgb(211, 211, 216);
+                position: absolute;
+                top: 300px;
+                left: 150px;
+            }
+            .goal img {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -15px;
+                left: 10px;
+            }
+            .goal p {
+                position: absolute;
+                top: 5px;
+                left: 35px;
+            }
+            .search input {
+                position: absolute;
+                top: 300px;
+                left: 250px;
+                width: 200px;
+                height: 31px;
+            }
+            .btn {
+                width: 80px;
+                height: 31px;
+                background-color: rgb(203, 84, 5);
+                position: absolute;
+                left: 430px;
+                top: 300px;
+            }
+            .btn img {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: -18px;
+                left: 25px;
+            }
+            #starta {
+                display: none;
+            }
+            .start {
+                height: 250px;
+                width: 100%;
+                border-bottom: solid 10px rgb(245, 245, 245);
+                border-top: solid 10px rgb(245, 245, 245);
+            }
+            .car {
+                display: none;
+            }
+            .smallCar img {
+                position: absolute;
+                top: 450px;
+                left: 50px;
+            }
+            .scTxt {
+                position: absolute;
+                top: 430px;
+                left: 160px;
+            }
+            .sc {
+                width: 100px;
+                height: 30px;
+                border: solid 1px black;
+                border-radius: 5px;
+                position: absolute;
+                top: 470px;
+                left: 390px;
+                padding-left: 10px;
+            }
+            .road {
+                display: none;
+            }
+            .row2 {
+                display: none;
+            }
+            .newImgtxt1 {
+                position: absolute;
+                top: 1010px;
+                color: white;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            .img2 {
+                margin-top: 10px;
+            }
+            .newImgtxt2 {
+                position: absolute;
+                top: 1455px;
+                color: white;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            .money1 {
+                position: absolute;
+                top: 5px;
+                right: 20px;
+            }
+            .money2 {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+            }
+        }
+        
+        .chakan {
+            width: 170px;
+            height: 40px;
+            border: solid 1px black;
+            border-radius: 5px;
+            margin-left: 190px;
+            margin-top: 40px;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        
+        .chakan img {
+            width: 15px;
+            height: 18px;
+            padding-left: 5px;
+        }
+        
+        .logoImg img {
+            width: 90%;
+            margin-left: 20px;
+        }
+        
+        .wish {
+            display: none;
+        }
+        
+        .newWish {
+            width: 90%;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .think {
+            display: none;
+        }
+        
+        .newThink {
+            width: 90%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .imgTxt1,
+        .imgTxt2 {
+            display: none;
+        }
+        
+        .second img {
+            width: 90%;
+            height: 220px;
+            margin-left: 20px;
+        }
+        
+        .third {
+            display: none;
+        }
+        
+        .last {
+            display: none;
+        }
+        
+        .newIcon1 {
+            position: absolute;
+            top: 2510px;
+            left: 150px;
+        }
+        
+        .newIcon2 {
+            position: absolute;
+            top: 2660px;
+            left: 150px;
+        }
+        
+        .newIcon3 {
+            position: absolute;
+            top: 2800px;
+            left: 150px;
+        }
+        
+        .newOne img,
+        .newTwo img,
+        .newThree img {
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+        
+        .newOne,
+        .newTwo,
+        .newThree {
+            width: 90%;
+            margin-left: 20px;
+            border-bottom: solid 1px grey;
+            height: 140px;
+        }
+        
+        .newLast {
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            background-color: black;
+            margin-top: 50px;
+            color: white;
+            padding-top: 100px;
+        }
+        
+        .carTxtc {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav style="background-color: black">
+        <div class="container-fluid">
+            <div class="navbar-right">
+                <img src="tell.png">&nbsp;&nbsp;
+                <span style="color: white">400-808-8682</span>&nbsp;&nbsp;&nbsp;
+                <span style="color: white"><a href="#">请登录</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">注册</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <img id="logo1" src="logo.png">
+        <div class="dingzhi"><span>快速定制</span></div>
+        <div class="hamous">
+            <div class="oneH"></div>
+        </div>
+        <div class="title" id="one">首页</div>
+        <div class="title">热门路线</div>
+        <div class="title">签证推荐</div>
+        <div class="title">使命愿景</div>
+    </div>
+    <div class="banner">
+        <img src="banner.jpg">
+        <div class="txt">
+            <div class="txt1">
+                <h1>悠游古欧洲 遍览德法瑞意</h1>
+            </div>
+            <div class="txt2">
+                <h4>巴黎卢浮宫、塞纳河游船、凡尔赛宫</h3>
+            </div>
+            <div class="txt3">
+                <h4>少女峰、大运河游船、金色列车、西庸城堡</h3>
+            </div>
+            <div class="txt4">
+                悠游古欧洲 遍览德法瑞意
+            </div>
+            <div class="txt5">
+                全程升级热早+1晚5星酒店
+            </div>
+        </div>
+        <div class="search">
+            <div class="goal">
+                <img src="position.png">
+                <p>目的地</p>
+            </div>
+            <input type="text" name="search" placeholder="  |日本  美国  英国  地中海" />
+            <div class="btn">
+                <img src="search.png">
+            </div>
+        </div>
+    </div>
+    <div class="start">
+        <div class="smallCar">
+            <img src="carH.png">
+            <div class="carTxtc">
+                <h3 style="color: white">机场接送 省心省力</h3>
+                <h5>提供上海、苏州、无锡各市</h5>
+                <h5>往返机票、码头接送服务，更有包车服务</h5>
+            </div>
+            <div class="scTxt">
+                <h3 style="color: rgb(28,80,128);">机场接送 省心省力</h3>
+                <h5>提供上海、苏州、无锡各市</h5>
+                <h5>往返机票、码头接送服务，更有包车服务</h5>
+            </div>
+            <div class="sc">
+                <h4>查看详情</h4>
+            </div>
+        </div>
+        <img id="starta" src="Sbanner2.jpg">
+        <div class="car">
+            <img src="car.png">
+            <span>车辆接送</span>
+            <div class="carText">查看详情</div>
+        </div>
+    </div>
+    <div class="hotRoad">
+        <h1><span style="color: red">  |</span> 热门线路</h1>
+    </div>
+    <div class="road">
+        <h1>热 门 线 路</h1>
+        <h4> Popular tourist routes</h4>
+    </div>
+    <div class="img">
+        <div class="row1">
+            <div class="img1">
+                <img src="hot1.jpg">
+                <div class="newImgtxt1">
+                    <h4>海南三亚5天4晚</h4>
+                    <h4>纯玩、4晚红树林度假王国</h4>
+                    <div class="money1">
+                        <h5>￥<span style="font-size: 30px;">2580</span>/人起</h5>
+                    </div>
+
+                </div>
+                <div class="newImgtxt2">
+                    <h4>德法意瑞欧洲4国</h4>
+                    <h4>ABCD任意线路有您挑选</h4>
+                    <div class="money2">
+                        <h5>￥<span style="font-size: 30px;">7999</span>/人起</h5>
+                    </div>
+
+                </div>
+                <div class="imgTxt1">
+                    <h5>海南三亚5天4晚,纯玩、4晚红树林度假王国</h5>
+                    <h5>￥<span style="font-size: 30px;">2580</span>/人起</h5>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="hot2.jpg">
+                <div class="imgTxt2">
+                    <h5>德法意瑞欧洲4国,ABCD任意线路有您挑选</h5>
+                    <h5>￥<span style="font-size: 30px;">7999</span>/人起</h5>
+                </div>
+            </div>
+        </div>
+        <div class="chakan">
+            查看更多
+            <img src="hotR.png">
+        </div>
+        <div class="row2">
+            <div class="img3">
+                <img src="hot3.jpg">
+                <div class="imgTxt3">
+                    <h5>曼谷+芭提雅 国际五星,赠送2220大礼包,绝无自费</h5>
+                    <h5>￥<span style="font-size: 30px;">2799</span>/人起</h5>
+                </div>
+            </div>
+            <div class="img4">
+                <img src="hot4.jpg">
+                <div class="imgTxt4">
+                    <h5>日本本周游 樱花、寿司、温泉、美食</h5>
+                    <h5>￥<span style="font-size: 30px;">5399</span>/人起</h5>
+                </div>
+            </div>
+            <div class="img5">
+                <img src="hot5.jpg">
+                <div class="imgTxt5">
+                    <h5>斯里兰卡7天6晚全景游 保证入住2晚香格里拉</h5>
+                    <h5>￥<span style="font-size: 30px;">7999</span>/人起</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newWish">
+        <p><span style="font-size: 20px;"><span style="color: red">|</span><span>使命与愿景：</span></span>让旅游回归本质，体验纯粹旅游</p>
+    </div>
+    <div class="wish">
+        <h1>使命与愿景</h1>
+        <h5>让旅游回归本质,体验纯粹旅游</h5>
+    </div>
+    <div class="center">
+        <div class="first">
+            <div class="logoImg">
+                <img src="mission1.jpg">
+            </div>'
+            <div class="newThink">
+                <h3 style="text-align: center;">--服务理念--</h3>
+                <h2></h2>
+                <h4>"英华逸游"通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</h4>
+            </div>
+            <div class="think">
+                <h3>服务理念及优势</h3>
+                <h2></h2>
+                <div>"英华逸游"通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</div>
+            </div>
+        </div>
+        <div class="second">
+            <img src="mission2.jpg">
+        </div>
+        <div class="third">
+            <div class="circle1">
+                <div class="rorate1">
+                    <img src="rorate.png">
+                    <img id="icon1" src="img/icon1.png">
+                    <p style="font-size: 18px">品质行程</p>
+                </div>
+                <div class="rorate1Txt">
+                    <p>旅游达人精心设计、基于口碑反复打磨，</p>
+                    <p>全网最好，敢跟任何产品比</p>
+                </div>
+            </div>
+            <div class="circle2">
+                <div class="rorate2">
+                    <img src="rorate.png">
+                    <img id="icon2" src="img/icon2.png">
+                    <p style="font-size: 18px">品质消费</p>
+                </div>
+                <div class="rorate2Txt">
+                    <p>不推自费，</p>
+                    <p>不进垃圾购物店和伪景点</p>
+                </div>
+            </div>
+            <div class="circle3">
+                <div class="rorate3">
+                    <img src="rorate.png">
+                    <img id="icon3" src="img/icon3.png">
+                    <p style="font-size: 18px">品质小团</p>
+                </div>
+                <div class="rorate2Txt">
+                    <p>独立成团不散拼，</p>
+                    <p>只跟亲朋好友一起玩，每天发团</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newThird">
+        <h3 style="text-align: center;">--服务优势--</h3>
+        <div class="newOne">
+            <img src="icon11.png">
+            <div class="newIcon1">
+                <h4>旅游达人精心设计、基于口碑反复打磨，</h4>
+                <h4>告别人山人海鸡肋景点。</h4>
+                <h4>全网最好，敢跟任何产品比</h4>
+            </div>
+        </div>
+        <div class="newTwo">
+            <img src="icon22.png">
+            <div class="newIcon2">
+                <h4>不推自费，</h4>
+                <h4>不进垃圾购物店和伪景点</h4>
+            </div>
+        </div>
+        <div class="newThree">
+            <img src="icon33.png">
+            <div class="newIcon3">
+                <h4>独立成团不散拼，</h4>
+                <h4>只跟亲朋好友一起玩，每天发团</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="last">
+        <div class="line1">
+            <div class="line1Txt">合作伙伴</div>
+            <div class="xiecheng" id="xiecheng1">
+                <img src="xiecheng.png">
+                <p>携程网</p>
+            </div>
+            <div class="feizhu">
+                <img src="feizhu.png">
+                <p>阿里飞猪</p>
+            </div>
+            <div class="quna">
+                <img src="quna.png">
+                <p>去哪儿</p>
+            </div>
+            <div class="suzhou">
+                <img src="suzhou.png">
+                <p id="suzhou1">苏州旅游局</p>
+            </div>
+        </div>
+        <div class="line2">
+            <span>热门位置</span>
+            <div class="country">
+                <p>韩国 日本 菲律宾 越南 老挝 柬埔寨 泰国 马来西亚 新加坡 印度尼西亚 印度 斯里兰卡 土耳其 阿联酋 西班牙 意大利 希腊 法国 比利时 荷兰</p>
+                <p>英国 瑞士 奥地利 德国 匈牙利 俄罗斯 捷克 芬兰 葡萄牙 冰岛 美国 加拿大 巴西 阿根廷 澳大利亚 新西兰</p>
+            </div>
+        </div>
+        <div class="line3">
+            <span>主题服务</span>
+            <div class="enjoy">
+                <p>海岛度假 历史文化 探索冒险 美食购物 都市生活 海外游学 邮轮度假 蜜月摄影 亲子乐园</p>
+            </div>
+        </div>
+        <div class="line4">
+            <span>友情链接</span>
+            <div class="lianjie">
+                <p>马蜂窝 穷游 booking 苏州旅游网 驴友网 吾爱全球签证中心 酒店团购 携程旅游攻略 天巡职航在线 满天飞旅游网 澳乐园 背包兔旅游行程</p>
+                <p>出境旅游 国际酒店 广州旅行社 出境旅游 517旅行 花生游 家园网 海外婚礼</p>
+            </div>
+        </div>
+        <div class="line5">
+            2020 @苏州英华国际旅游有限公司 版权所有
+        </div>
+    </div>
+    <div class="newLast">
+        <h4>苏ICP、2020</h4>
+        <h4>@苏州英华国际旅游有限公司 版权所有</h4>
+        <h4>技术支持 杭州科技</h4>
+    </div>
+</body>
+
+</html>
